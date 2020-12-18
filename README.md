@@ -1,2 +1,2 @@
-# webpack5
-webpack 5 practice
+# webpack5-practice
+for webpack 5 practice, read source code
