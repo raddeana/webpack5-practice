@@ -1,11 +1,13 @@
 {
-  "name": "my-webpack-project",
-  "version": "1.0.0",
-  "description": "My webpack project",
+  "name": "webpack5-practice",
+  "version": "0.0.1",
+  "description": "webpack5 practice project",
   "main": "app.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve"
+    "build-home": "webpack --config webpack.home.config.js",
+    "start-home": "webpack serve --config webpack.home.config.js",
+    "build-voyage": "webpack --config webpack.voyage.config.js",
+    "start-voyage": "webpack serve --config webpack.voyage.config.js"
   },
   "repository": {
     "type": "git",
@@ -13,20 +15,28 @@
   },
   "author": "Philip",
   "license": "ISC",
+  "dependencies": {
+    "vue": "^3.0.6",
+    "vue-router": "^4.0.5",
+    "vuex": "^4.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "babel-loader": "^8.2.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "css-loader": "^5.0.1",
-    "html-webpack-plugin": "^4.5.1",
+    "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.3.5",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",
-    "webpack": "^5.19.0",
+    "webpack": "^5.38.1",
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.11.2"
   },
-  "sideEffects": ["./src/utils/chunk.js", "./src/utils/index.js"]
+  "sideEffects": [
+    "./src/utils/chunk.js",
+    "./src/utils/index.js"
+  ]
 }
